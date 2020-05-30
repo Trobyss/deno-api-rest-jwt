@@ -1,0 +1,11 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "env": {
+    "SECRET": "ADRIEN_IS_THE_BEST_AUTHOR_ON_MEDIUM"
+  },
+  "scripts": {
+    "start": {
+      "cmd": "deno run --unstable --allow-env --allow-read --allow-net app.ts"
+    }
+  }
+}
