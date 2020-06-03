@@ -20,12 +20,12 @@ export class UserController implements BaseController<IUser> {
     await User.deleteById(id);
   }
 
-  async getAll() {
-    return await User.all();
+  getAll() {
+    return User.all();
   }
 
-  async getOne(id: string) {
-    return await User.where("id", id).first();
+  getOne(id: string) {
+    return User.where("id", id).first();
   }
 
   async update(id: string, values: IUser) {

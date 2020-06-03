@@ -17,8 +17,8 @@ export class DatabaseController {
   /**
    * Initialise models
    */
-  async initModels() {
+  initModels() {
     this.client.link([User]);
-    await this.client.sync({ drop: true });
+    return this.client.sync({ drop: true });
   }
 }

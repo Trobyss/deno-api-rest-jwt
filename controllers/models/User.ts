@@ -56,6 +56,6 @@ export class User extends Model {
 
   static async hashPassword(password: string) {
     const salt = await bcrypt.genSalt(8);
-    return await bcrypt.hash(password, salt);
+    return bcrypt.hash(password, salt);
   }
 }
