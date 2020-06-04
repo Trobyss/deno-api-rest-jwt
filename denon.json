@@ -5,7 +5,10 @@
   },
   "scripts": {
     "start": {
-      "cmd": "deno run --unstable --allow-env --allow-read --allow-net app.ts"
+      "cmd": "deno run --allow-write --unstable --allow-env --allow-read --allow-net app.ts"
     }
+  },
+  "watcher": {
+    "exts": ["js", "ts"]
   }
 }
